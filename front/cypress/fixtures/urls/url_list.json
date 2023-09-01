@@ -1,0 +1,113 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "destination": "http:\/\/harber.net\/",
+            "description": "Autem in occaecati magnam aliquid possimus laboriosam in. Omnis sit iste ullam. Blanditiis aperiam natus quia. Quia eum maiores optio libero. In commodi aspernatur voluptatem et numquam. Temporibus rerum aut occaecati voluptate quis est odit. Velit dolorem quibusdam nobis officia explicabo quidem quasi. Velit ut et excepturi quae quia exercitationem. Quis dolores et dolorem ut quo et. Eaque hic reprehenderit nostrum possimus ipsum. Qui placeat doloribus voluptates aut illum qui. Soluta asperiores et ut modi distinctio omnis. Et maiores eos reprehenderit sint quis. Provident nobis voluptas reiciendis eveniet. Reiciendis id magnam sit architecto et quibusdam nulla et. Voluptate praesentium sunt fugiat nam qui. Dicta facilis quia est sed. Neque aut sint voluptatum iure at explicabo qui.",
+            "shortdest": "http:\/\/localhost:8000\/J6oMX",
+            "slug": "J6oMX",
+            "views": 11,
+            "state": "Active",
+            "created_at": "2023-08-31",
+            "updated_at": "2023-09-01"
+        },
+        {
+            "id": 2,
+            "destination": "http:\/\/www.dummy.com",
+            "description": null,
+            "shortdest": "http:\/\/localhost:8000\/v6REg",
+            "slug": "v6REg",
+            "views": 0,
+            "state": "Active",
+            "created_at": "2023-09-01",
+            "updated_at": "2023-09-01"
+        },
+        {
+            "id": 3,
+            "destination": "http:\/\/www.dummy.com222222",
+            "description": null,
+            "shortdest": "http:\/\/localhost:8000\/Vxrzx",
+            "slug": "Vxrzx",
+            "views": 0,
+            "state": "Inactive",
+            "created_at": "2023-09-01",
+            "updated_at": "2023-09-01"
+        },
+        {
+            "id": 4,
+            "destination": "http:\/\/www.dummy.com222222",
+            "description": null,
+            "shortdest": "http:\/\/localhost:8000\/oxa9x",
+            "slug": "oxa9x",
+            "views": 0,
+            "state": "Active",
+            "created_at": "2023-09-01",
+            "updated_at": "2023-09-01"
+        },
+        {
+            "id": 5,
+            "destination": "http:\/\/www.dummy.com",
+            "description": null,
+            "shortdest": "http:\/\/localhost:8000\/QXEW6",
+            "slug": "QXEW6",
+            "views": 0,
+            "state": "Active",
+            "created_at": "2023-09-01",
+            "updated_at": "2023-09-01"
+        },
+        {
+            "id": 6,
+            "destination": "http:\/\/www.dummy.com",
+            "description": null,
+            "shortdest": "http:\/\/localhost:8000\/D6nag",
+            "slug": "D6nag",
+            "views": 0,
+            "state": "Active",
+            "created_at": "2023-09-01",
+            "updated_at": "2023-09-01"
+        },
+        {
+            "id": 7,
+            "destination": "http:\/\/www.dummy.com",
+            "description": null,
+            "shortdest": "http:\/\/localhost:8000\/v61A6",
+            "slug": "v61A6",
+            "views": 0,
+            "state": "Active",
+            "created_at": "2023-09-01",
+            "updated_at": "2023-09-01"
+        }
+    ],
+    "links": {
+        "first": "http:\/\/localhost:8000\/api\/urls?page=1",
+        "last": "http:\/\/localhost:8000\/api\/urls?page=1",
+        "prev": null,
+        "next": null
+    },
+    "meta": {
+        "current_page": 1,
+        "from": 1,
+        "last_page": 1,
+        "links": [
+            {
+                "url": null,
+                "label": "&laquo; Previous",
+                "active": false
+            },
+            {
+                "url": "http:\/\/localhost:8000\/api\/urls?page=1",
+                "label": "1",
+                "active": true
+            },
+            {
+                "url": null,
+                "label": "Next &raquo;",
+                "active": false
+            }
+        ],
+        "path": "http:\/\/localhost:8000\/api\/urls",
+        "per_page": 1000,
+        "to": 22,
+        "total": 22
+    }
+}

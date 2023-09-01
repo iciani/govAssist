@@ -1,0 +1,11 @@
+.nav-bar-btn {
+  text-decoration: none;
+}
+
+.router-link-active.router-link-exact-active {
+  background-color: grey;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+
