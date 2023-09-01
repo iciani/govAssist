@@ -92,13 +92,13 @@ For the FRONT-END vue 3 application.
 1. clone the repo
 
 ```
-git clone https://gitlab.com/iciani/govassist.git
+git clone https://github.com/iciani/govAssist.git
 ```
 
 2. cd into cloned repo
 
 ```
-cd gov_assist
+cd gobAssist
 cd back
 ```
 
@@ -165,7 +165,7 @@ php artisan serve (Being at PWD root of folder BACK)
 1. In a new terminal, browse project folder.
 
 ```
-cd gov_assist
+cd gobAssist
 cd front
 ```
 
