@@ -69,12 +69,10 @@ CHALLENGE:
 
 - We are using Middlewares for JWT authentication, and to configure JSON responses or VIEWS responses depending on the case. 
 - We homogenized the responses for api with a JsonHelper, used in the Global Exception Handler.
-- We have implemented:
-        "php-open-source-saver/jwt-auth": "^2.1", (For JWT auth manipulation)
-        "veelasky/laravel-hashid": "^3.1" (for hashing the slug automatically)
-
+- We have implemented: "php-open-source-saver/jwt-auth": "^2.1", (For JWT auth manipulation) and "veelasky/laravel-hashid": "^3.1" (for hashing the slug automatically)
 - We are using the LARAVEL-HASHID treat in the url model, to map the hash into the slug. 
 
+<br />
 
 For the FRONT-END vue 3 application. 
 
