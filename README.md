@@ -56,11 +56,12 @@ CHALLENGE:
   
 - Endpoints for CRUD URL. It also allows to filter by state.
 
-	Example: http://127.0.0.1:8000/api/todos?per_page=25&state=Active
+	Example: http://127.0.0.1:8000/api/urls?per_page=25&state=Active
 	Filter for Urls is by State (only added one as an example)
  
 	  GET|HEAD  api/urls ..................................... urls.index   › UrlController@index  
 	  POST      api/urls ..................................... urls.store   › UrlController@store
+	  POST      api/urls/state ............................... urls.state.update   › UrlController@stateUpdate
 	  GET|HEAD  api/urls/{url} ............................... urls.show    › UrlController@show 
 	  DELETE    api/urls/{url} ............................... urls.destroy › UrlController@destroy
 	  GET|HEAD  /{url} ....................................... urls.redirect › UrlController@redirect
@@ -71,6 +72,8 @@ CHALLENGE:
 - We have implemented:
         "php-open-source-saver/jwt-auth": "^2.1", (For JWT auth manipulation)
         "veelasky/laravel-hashid": "^3.1" (for hashing the slug automatically)
+
+- We are using the LARAVEL-HASHID treat in the url model, to map the hash into the slug. 
 
 
 For the FRONT-END vue 3 application. 
@@ -91,14 +94,14 @@ For the FRONT-END vue 3 application.
 1. clone the repo
 
 ```
-git clone https://gitlab.com/iciani/looi.git
+git clone https://gitlab.com/iciani/govassist.git
 ```
 
 2. cd into cloned repo
 
 ```
-cd looi
-cd looi_back
+cd gov_assist
+cd back
 ```
 
 3. install dependencies
@@ -132,10 +135,16 @@ php artisan migrate (you will be asked to create the DB, please type yes)
 php artisan db:seed (you can execute this command, as many times as you wish. This will be adding new lines)
 ```
 
-8. Load POSTMAN collection to TEST the ENDPOINTS (Found in this folder LOOI_BACK)
+8. Load POSTMAN collection to TEST the ENDPOINTS (Found in this folder BACK)
 ```
-looi.postman_collection.json
+govassist.postman_collection.json
 ```
+
+9. Run Schedules (To validate the execution of the command, we have scheduled every minute.)
+```
+php artisan schedule:run
+```
+
 
 <br />
 
@@ -144,10 +153,10 @@ looi.postman_collection.json
 1. Execute the App in one Terminal
 
 ```
-php artisan serve (Being at PWD root of folder LOOI_BACK)
+php artisan serve (Being at PWD root of folder BACK)
 ```
 
-3. If you visit the base url configured (default would be http://localhost:8000) you should now see a welcome screen.
+3. If you visit the base url configured (default would be http://localhost:8000) you should now see a welcome screen in /.
 
 
 <br/>
@@ -158,8 +167,8 @@ php artisan serve (Being at PWD root of folder LOOI_BACK)
 1. In a new terminal, browse project folder.
 
 ```
-cd looi
-cd looi_front
+cd gov_assist
+cd front
 ```
 
 2. Install dependencies.
@@ -189,7 +198,7 @@ npx cypress run
 6. As default, the DB was seeded with Admin User, or you can Register new user.
 
 ```
-admin@looi.com // looi
+admin@govassist.com // govassist
 ```
 
 
@@ -197,15 +206,19 @@ admin@looi.com // looi
 
 ## 🔎 **SHOWCASE**
 
-<img src="https://i.ibb.co/hXhMPj2/looi-server-welcome-screen.png" alt="looi-server-welcome-screen" border="0">
+<img src="https://i.ibb.co/NtVSz0c/govassist-back-welcome.png" alt="looi-server-welcome-screen" border="0">
 <br />
-<img src="https://i.ibb.co/HDYZWT8/vue-login-page-looi.png" alt="vue-login-page-looi" border="0">
+<img src="https://i.ibb.co/D1h0pb0/govassist-front-login.png" alt="vue-login-page-looi" border="0">
 <br />
-<img src="https://i.ibb.co/jRFKc94/todo-routes-looi-challenge.jpg" alt="route-list" border="0">
+<img src="https://i.ibb.co/6H0Wztd/govassist-front-not-found.png" alt="vue-login-page-looi" border="0">
 <br />
-<img src="https://i.ibb.co/dKGbZ9X/todo-tests-looi-phpunit.png" alt="looi-tests" border="0">
+<img src="https://i.ibb.co/47r9BSm/govassist-front-welcome.png" alt="route-list" border="0">
 <br />
-<img src="https://i.ibb.co/52vppM2/todo-looi-tests-cypress.jpg" alt="cypress-front-tests" border="0">
+<img src="https://i.ibb.co/546pQc1/govassist-routes.png" alt="route-list" border="0">
+<br />
+<img src="https://i.ibb.co/2h2GhCp/govassist-back-tests.png" alt="looi-tests" border="0">
+<br />
+<img src="https://i.ibb.co/NmYvh2Y/govassist-front-tests.png" alt="cypress-front-tests" border="0">
 
 <br />
 

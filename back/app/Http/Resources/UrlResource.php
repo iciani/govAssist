@@ -18,7 +18,7 @@ class UrlResource extends JsonResource
      */
     public function toArray($request = null)
     {
-         return [
+        return [
             'id' => $this->id,
             'destination' => $this->destination,
             'description' => $this->description,

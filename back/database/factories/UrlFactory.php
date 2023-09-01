@@ -30,5 +30,4 @@ class UrlFactory extends Factory
             'state' => $this->faker->randomElement(UrlStates::states()),
         ];
     }
-
 }

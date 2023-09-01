@@ -5,15 +5,15 @@ namespace App\Http\Controllers;
 use App\Enums\UrlStates;
 use App\Helpers\JsonHelper;
 use App\Http\Requests\Url\UrlIndexRequest;
-use App\Http\Requests\Url\UrlStoreRequest;
 use App\Http\Requests\Url\UrlStateUpdateRequest;
+use App\Http\Requests\Url\UrlStoreRequest;
 use App\Http\Resources\UrlResource;
 use App\Models\Url;
 use App\Services\UrlService;
 use Illuminate\Http\JsonResponse;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use Illuminate\Http\Response;
-use \Illuminate\Http\RedirectResponse;
 
 class UrlController extends Controller
 {

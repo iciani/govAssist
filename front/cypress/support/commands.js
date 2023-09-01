@@ -45,10 +45,10 @@ Cypress.Commands.add('apiInterceptors', () => {
 	cy.intercept('PUT', '**/urls/1*', {
 		fixture: '/urls/url_edit_state.json',
 	}).as('UrlEdit')
-
-	cy.intercept('DELETE', '**/urls/2*', {
+	
+	cy.intercept('DELETE', '**/urls/2', {
 		fixture: '/urls/url_delete.json',
-	}).as('UrlDelete')
+	}).as('UrlDel')
 })
 
 Cypress.Commands.add('Login', () => {

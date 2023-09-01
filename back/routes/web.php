@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UrlController;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +14,7 @@ use App\Http\Controllers\UrlController;
 |
 */
 
-Route::get('/{url}', [ UrlController::class, 'redirect' ])->name('url.redirect');
+Route::get('/{url}', [UrlController::class, 'redirect'])->name('url.redirect');
 
 Route::get('/', function () {
     return view('welcome');

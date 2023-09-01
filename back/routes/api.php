@@ -26,5 +26,5 @@ Route::controller(AuthController::class)->group(function () {
 
 Route::group(['middleware' => ['auth:api']], function () {
     Route::apiResource('urls', UrlController::class)->only(['index', 'store', 'show', 'destroy']);
-    Route::post('/urls/state', [UrlController::class, 'stateUpdate']);
+    Route::post('/urls/state', [UrlController::class, 'stateUpdate'])->name('urls.state.update');
 });

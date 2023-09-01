@@ -19,7 +19,7 @@ class Url extends Model
 
     // add this property to your model if you want to persist to the database.
     protected $shouldHashPersist = true;
-    
+
     // by default, the persisted value will be stored in `hashid` column
     // override column name to your desired name.
     protected $hashColumnName = 'slug';
@@ -30,7 +30,7 @@ class Url extends Model
         'description',
         'state',
     ];
-    
+
     protected $dates = [
         'created_at',
         'updated_at',
@@ -54,9 +54,8 @@ class Url extends Model
      *
      * @return string
      */
-    public function getShortUrlAttribute() : string
+    public function getShortUrlAttribute(): string
     {
         return url('/') . "/" . $this->slug;
     }
-
 }

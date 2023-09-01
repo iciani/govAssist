@@ -28,7 +28,7 @@ describe('GovAssist Url Test', () => {
 		cy.getByDataCy('urlBtn').should('be.visible').click()
 		cy.getByDataCy('delete_action_2').click({ force: true })
 		cy.get('form').submit()
-		cy.wait('@urlDelete').its('response.statusCode').should('eq', 200)
+		cy.wait('@UrlDel').its('response.statusCode').should('eq', 200)
 		cy.wait('@UrlList').its('response.statusCode').should('eq', 200)
 		cy.log('End of Tests Case')
 	})
